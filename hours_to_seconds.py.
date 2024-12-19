@@ -1,4 +1,0 @@
-#!/bin/bash
-hours = 2
-1 hour = 3600sec
-print(f"2 hour(s) is {2*3600}seconds")

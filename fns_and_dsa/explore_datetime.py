@@ -31,7 +31,7 @@ def main():
 
     # Part 2: Calculate a future date
     try:
-        days = int(input("Enter the number of days to calculate the future date: ").strip())
+        days = int(input("Enter the number of days to add to the current date: ").strip())
         calculate_future_date(days)
     except ValueError:
         print("Invalid input. Please enter an integer.")

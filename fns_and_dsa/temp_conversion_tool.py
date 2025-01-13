@@ -27,7 +27,7 @@ def convert_to_fahrenheit(celsius):
     Returns:
         float: Temperature in Fahrenheit.
     """
-    return celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + FAHRENHEIT_OFFSET
+    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + FAHRENHEIT_OFFSET
 
 def main():
     """

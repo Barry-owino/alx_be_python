@@ -27,7 +27,7 @@ def convert_to_fahrenheit(celsius):
     Returns:
         float: Temperature in Fahrenheit.
     """
-    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + FAHRENHEIT_OFFSET
+    return celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + FAHRENHEIT_OFFSET
 
 def main():
     """
@@ -41,10 +41,10 @@ def main():
         # Perform conversion based on input unit
         if unit == 'C':
             converted_temp = convert_to_fahrenheit(temperature)
-            print(f"{temperature:.2f} °C is equal to {converted_temp:.2f} °F.")
+            print(f"{temperature:.2f} \u00b0C is equal to {converted_temp:.2f} \u00b0F.")
         elif unit == 'F':
             converted_temp = convert_to_celsius(temperature)
-            print(f"{temperature:.2f} °F is equal to {converted_temp:.2f} °C.")
+            print(f"{temperature:.2f} \u00b0F is equal to {converted_temp:.2f} \u00b0C.")
         else:
             raise ValueError("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
     except ValueError as e:

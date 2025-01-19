@@ -28,7 +28,7 @@ class BankAccount:
             raise ValueError("Insufficient funds.")
         self.account_balance -= amount
 
-    def get_balance(self):
+    def display_balance(self):
         """
         Return the current account balance.
         :return: current account balance.

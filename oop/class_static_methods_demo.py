@@ -24,7 +24,7 @@ class Calculator:
         :param b: Second number.
         :return: Product of a and b.
         """
-        print(f"Calculation Type: {cls.calculation_type}")
+        print(f"Calculation type: {cls.calculation_type}")
         return a * b
 
 
